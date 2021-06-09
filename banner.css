@@ -1,0 +1,169 @@
+/* ------- General ------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Source Sans Pro",sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #444;
+}
+
+/* --------------- Header -------------- */
+.cabecera {
+    background: #eaf2fd;
+    /* height: 102px; */
+}
+
+.container2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    padding: 20px;
+    grid-template-areas:
+          "logo idiomas";
+}
+
+.logo { 
+    grid-area: logo; 
+}
+
+.idiomas { 
+    grid-area: idiomas; 
+}
+
+
+.cabecera .logo {
+    float: left;
+    /* margin-top: 15px;
+    margin-left: -5px; */
+}
+
+.logo {
+    /* float: left; */
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+.logo>a>img {
+    width: 240px;
+    margin-left: 60px;
+    margin-top: 6px;
+}
+
+.btn-group-top {
+    margin: auto;
+    margin-left: 700px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.h-car {
+    width: 185px;
+    right: 528px;
+    top: 54px;
+    position: fixed;
+    z-index: 50;
+}
+
+.h-car>img{
+    width: 100%;
+}
+
+.container3 {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    height: 31px;
+}
+
+.midbar {
+    padding: 0;
+    font-size: .9em;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.midbar .midnav {
+    padding-left: 19px;
+    margin-left: 69px;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+ol, ul {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.nav-pills>li {
+    float: left;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.midbar .nav>li a {
+    color: #111;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.nav-pills>li>a {
+    border-radius: 4px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.midbar .nav>li:first-child:before {
+    display: none;
+}
+
+.midbar .nav>li:before {
+    background: #a7c8f5;
+    content: "";
+    display: block;
+    height: 70%;
+    left: -2px;
+    position: absolute;
+    top: 15%;
+    width: 2px;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
